@@ -1,3 +1,65 @@
+@import '../../../../../variables.scss';
+
+
 .player-container{
-    height: 100px;
+    min-height: 92px;
+    background-color: rgba(0,0,0,.4);
+
+    *{
+        outline: none;
+    }
+
+    .song-info{
+        width: 350px;
+        padding: 1rem;
+
+        .poster{
+            display: block;
+            width: 60px;
+        }
+    }
+
+    .player-controls{
+        padding: 1rem;
+
+        button{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        button.previous, button.next{
+            border: 2px solid rgba(255,255,255,.4);
+            background-color: transparent;
+            height: 3rem;
+            border-radius: .5rem;
+            color: #fff;
+        }
+        button.previous{
+            padding: 0 2rem 0 1rem;
+            margin-right: -1.4rem;
+        }
+        button.next{
+            padding: 0 1rem 0 2rem;
+            margin-left: -1.4rem;
+        }
+        button.play{
+            height: 4.5rem;
+            width: 4.5rem;
+            border-radius: 50%;
+            border: none;
+            position: relative;
+            background-color: mat-color($accent);
+            box-shadow: 0 0 1rem rgba(0,0,0,.4);
+            z-index: 1;
+            
+
+            mat-icon{
+                font-size: 3rem;
+                width: 3rem; 
+                height: 3rem;;
+                color: #fff
+            }
+        }
+    }
 }

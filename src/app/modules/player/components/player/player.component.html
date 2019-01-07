@@ -1,3 +1,38 @@
-<section class="player-container">
-l
+<section class="player-container" fxLayout="row" fxLayoutAlign="start stretch">
+    <section class="song-info" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+        <img src="https://c1.staticflickr.com/6/5496/10031643055_fc8b0ac364_b.jpg" alt="poster" class="poster">
+        <section fxLayout="column">
+            <span class="mat-body-2">The Greatest Showman</span>
+            <span class="mat-caption">Soundtrack</span>
+        </section>
+    </section>
+    <section fxFlex class="player-controls" fxLayout="row" fxLayoutGap="2rem" fxLayoutAlign="start center">
+        <section fxLayout="row" fxLayoutAlign="start center">
+            <section>
+                <button matRipple class="previous">
+                    <mat-icon>fast_rewind</mat-icon>
+                </button>
+            </section>
+            <section>
+                <button matRipple class="play">
+                    <mat-icon>play_arrow</mat-icon>
+                </button>
+            </section>
+            <section>
+                <button matRipple class="next">
+                    <mat-icon>fast_forward</mat-icon>
+                </button>
+            </section>
+        </section>
+        <section fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1rem">
+            <span>1:21</span>
+            <section fxFlex>
+                <mat-slider fxFlex value="40"></mat-slider>
+            </section>
+            <span>3:02</span>
+        </section>
+        <section fxLayout="row">
+            <mat-icon>volume_up</mat-icon>
+        </section>
+    </section>
 </section>
