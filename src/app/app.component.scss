@@ -1,0 +1,14 @@
+.app-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+
+    .sidenav-left{
+        width: 250px;
+
+        .user-info{
+            padding-top: 0;
+        }
+    }
+}

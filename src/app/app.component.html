@@ -1,0 +1,62 @@
+<article class="app-container" fxLayout="column">
+    <mat-toolbar fxLayoutAlign="space-between center">
+        <span></span>
+          <img src="https://avatars0.githubusercontent.com/u/16052650?s=400&u=2fd8bf74ae64c41b7afbc74b49af2d7d8b4247d1&v=4" style="border-radius:50%; width: 40px;" /> 
+      </mat-toolbar>
+  <mat-sidenav-container fxFlex>
+      <mat-sidenav mode="side" opened class="sidenav-left">
+          <mat-nav-list dense>
+              <h2 matSubheader>Browse Music</h2>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">wb_sunny</mat-icon>
+                  <span matLine>Discover</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">headset</mat-icon>
+                  <span matLine>Songs</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">albums</mat-icon>
+                  <span matLine>Albums</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">videocam</mat-icon>
+                  <span matLine>Videos</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">radio</mat-icon>
+                  <span matLine>Radio</span>
+              </a>
+              <mat-divider></mat-divider>
+              <h2 matSubheader>Your Music</h2>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">reorder</mat-icon>
+                  <span matLine>Playlist</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">favorite</mat-icon>
+                  <span matLine>Favorite</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">history</mat-icon>
+                  <span matLine>History</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">get_app</mat-icon>
+                  <span matLine>Downloads</span>
+              </a>
+              <a mat-list-item href="#"> 
+                  <mat-icon matListIcon color="accent">file_copy</mat-icon>
+                  <span matLine>Local Files</span>
+              </a>
+           </mat-nav-list>
+        <mat-divider></mat-divider>
+        
+      </mat-sidenav>
+      <mat-sidenav-content data-simplebar>
+          
+      </mat-sidenav-content>
+  </mat-sidenav-container>
+  <mat-divider></mat-divider>
+  <nx-player></nx-player>
+</article>
