@@ -1,0 +1,22 @@
+.album-container{
+    padding: 2rem 0;
+
+    .album-info{
+        
+        .title{
+            margin-bottom: 1rem;
+        }
+        .poster{
+            width: 150px;
+            height: 150px;
+            border-radius: 10%;
+            background-color: rgba(255,255,255,.3);
+            background-image: url(https://i.scdn.co/image/451317d2347fc0cebddb3fd777d94fa8aeaf610f);
+            background-size: cover;
+        }
+
+        .play{
+            margin-top: 1.5rem;
+        }
+    }
+}

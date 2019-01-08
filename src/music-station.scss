@@ -28,3 +28,27 @@ $dark-theme: mat-dark-theme($primary, $accent, $warn);
 .dark-theme{
     @include angular-material-theme($dark-theme);
 }
+
+.container{
+    // margin-bottom: 1rem !important;
+   
+    &.xs{
+        margin: auto 1rem;
+    }
+
+    &.sm{
+        margin: auto 1rem;
+    }
+
+    &.md{
+        margin: auto 1rem;
+    }
+
+    &.lg{
+        margin: auto 1rem;
+    }
+
+    &.xl{
+        margin: auto 20%;
+    }
+}

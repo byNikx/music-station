@@ -10,7 +10,7 @@
     }
 
     .song-info{
-        width: 350px;
+        width: 300px;
         padding: 1rem;
 
         .poster{
@@ -31,7 +31,7 @@
         button.previous, button.next{
             border: 2px solid rgba(255,255,255,.4);
             background-color: transparent;
-            height: 3rem;
+            height: 2.5rem;
             border-radius: .5rem;
             color: #fff;
         }
@@ -44,8 +44,8 @@
             margin-left: -1.4rem;
         }
         button.play{
-            height: 4.5rem;
-            width: 4.5rem;
+            height: 4rem;
+            width: 4rem;
             border-radius: 50%;
             border: none;
             position: relative;
