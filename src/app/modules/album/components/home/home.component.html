@@ -1,4 +1,4 @@
-<article fxLayout="column" class="album-container">
+<article fxLayout="column" class="album-container" @slideInUp>
   <section nxContainer fxLayout="row" fxLayoutGap="2rem" class="album-info" fxLayoutAlign="start start">
     <section>
       <section class="poster mat-elevation-z4"></section>
@@ -11,8 +11,8 @@
           <mat-chip>Primary fish</mat-chip>
           <mat-chip>Accent fish</mat-chip>
         </mat-chip-list>
-        <button mat-fab class="play">
-          <mat-icon>play_arrow</mat-icon>
+        <button mat-raised-button color="accent" class="play">
+          <mat-icon>play_arrow</mat-icon> PLAY ALL
         </button>
     </section>
   </section>
