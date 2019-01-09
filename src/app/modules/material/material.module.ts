@@ -37,7 +37,7 @@ import {
     MatRippleModule,
     MatGridListModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
   ]
 })
 export class MaterialModule { }

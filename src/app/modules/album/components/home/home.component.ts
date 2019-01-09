@@ -15,7 +15,7 @@ import {
     trigger('slideInUp', [
 
       state('void', style({
-        transform: 'translateY(100%)'
+        transform: 'translateX(-100%)'
       })),
 
       transition(':enter, :leave', [ // void <=> *

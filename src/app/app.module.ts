@@ -7,12 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './modules/material/material.module';
 import { PlayerModule } from './modules/player/player.module';
-import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
   ],
   imports: [
     AppRoutingModule,
@@ -20,7 +18,7 @@ import { HomeComponent } from './components/home/home.component';
     HttpClientModule,
     FlexLayoutModule,
     MaterialModule,
-    PlayerModule
+    PlayerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Directive, ElementRef, OnInit, OnDestroy, HostBinding, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, OnInit, OnDestroy, HostBinding, Renderer2, AfterContentInit, AfterViewInit, ViewContainerRef } from '@angular/core';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs';
 
@@ -22,8 +22,10 @@ export class ContainerDirective implements OnInit, OnDestroy{
   constructor(
     private mediaObserver: MediaObserver,
     private renderer:Renderer2,
-    element: ElementRef
+    element: ElementRef,
+    private vcr: ViewContainerRef
     ) { 
+      
       this.element = element.nativeElement;
     }
 
