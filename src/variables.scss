@@ -5,3 +5,33 @@ $accent:  mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $warn:    mat-palette($mat-red);
+
+$light-theme: mat-light-theme($primary, $accent, $warn);
+$dark-theme: mat-dark-theme($primary, $accent, $warn);
+
+//css variables
+//   base:              white,
+//   divider:           $light-dividers,
+//   dividers:          $light-dividers,
+//   disabled:          $light-disabled-text,
+//   disabled-button:   rgba(white, 0.3),
+//   disabled-text:     $light-disabled-text,
+//   hint-text:         $light-disabled-text,
+//   secondary-text:    $light-secondary-text,
+//   icon:              white,
+//   icons:             white,
+//   text:
+
+.light-theme{
+    --theme: $light-theme;
+}
+.dark-theme{
+    --theme: $dark-theme;
+}
+:root{
+    --base-foreground:map-get(map-get(var(--theme), foreground), base);
+    --icon-color:map-get(map-get(var(--theme), foreground), icon);
+    --text-color:map-get(map-get(var(--theme), foreground), text);
+    --secondary-text-color:map-get(map-get(var(--theme), foreground), secondary-text);
+    --border-color:map-get(map-get(var(--theme), foreground), divider);
+}
