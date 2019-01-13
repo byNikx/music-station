@@ -1,0 +1,17 @@
+<article class="song-container" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+  <img fxFlex="50px" [src]="song.poster" alt="poster">
+  <section fxFlex="300px" fxLayout="column" class="title-and-artist no-margin">
+    <p class="title no-margin">
+      {{song.title}}
+    </p>
+    <p class="artist no-margin mat-caption">
+      {{song.artist}}
+    </p>
+  </section>
+  <span fxFlex></span>
+  <section fxlayout="row" fxLayoutGap="1rem">
+    <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </section>
+</article>

@@ -6,6 +6,7 @@ import { AlbumRoutingModule } from './album-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { ContainerModule } from '../container/container.module';
 import { MaterialModule } from '../material/material.module';
+import { SongModule } from '../song/song.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -14,6 +15,7 @@ import { MaterialModule } from '../material/material.module';
     AlbumRoutingModule,
     FlexLayoutModule,
     ContainerModule,
+    SongModule,
     MaterialModule
   ]
 })

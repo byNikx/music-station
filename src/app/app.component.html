@@ -1,4 +1,5 @@
 <article class="app-container" fxLayout="column">
+    <mat-progress-bar class="page-loader" color="accent" mode="indeterminate" [fxShow]="showPageLoading"></mat-progress-bar>
     <mat-toolbar fxLayoutAlign="start center" fxLayoutGap="1rem">
         <button mat-icon-button>
             <mat-icon>menu</mat-icon>
@@ -17,50 +18,52 @@
                     <mat-icon matListIcon>wb_sunny</mat-icon>
                     <span matLine>Discover</span>
                 </a>
-                <a mat-list-item href="#">
-                    <mat-icon matListIcon>headset</mat-icon>
-                    <span matLine>Songs</span>
-                </a>
                 <a mat-list-item routerLink="/album">
                     <mat-icon matListIcon>albums</mat-icon>
                     <span matLine>Albums</span>
                 </a>
-                <a mat-list-item href="#">
+                <a mat-list-item>
+                    <mat-icon matListIcon>headset</mat-icon>
+                    <span matLine>Songs</span>
+                </a>
+                <a mat-list-item>
                     <mat-icon matListIcon>videocam</mat-icon>
                     <span matLine>Videos</span>
                 </a>
-                <a mat-list-item href="#">
+                <a mat-list-item>
                     <mat-icon matListIcon>radio</mat-icon>
                     <span matLine>Radio</span>
                 </a>
                 <mat-divider></mat-divider>
                 <h2 matSubheader>Your Music</h2>
-                <a mat-list-item href="#">
+                <a mat-list-item>
                     <mat-icon matListIcon>reorder</mat-icon>
                     <span matLine>Playlist</span>
                 </a>
-                <a mat-list-item href="#">
+                <a mat-list-item>
                     <mat-icon matListIcon>favorite</mat-icon>
                     <span matLine>Favorite</span>
                 </a>
-                <a mat-list-item href="#">
+                <a mat-list-item>
                     <mat-icon matListIcon>history</mat-icon>
                     <span matLine>History</span>
                 </a>
-                <a mat-list-item href="#">
+                <a mat-list-item>
                     <mat-icon matListIcon>get_app</mat-icon>
                     <span matLine>Downloads</span>
                 </a>
-                <a mat-list-item href="#">
-                    <mat-icon matListIcon>file_copy</mat-icon>
-                    <span matLine>Local Files</span>
-                </a>
+                <mat-list-item (click)="toggleTheme()">
+                    <mat-icon matListIcon>brightness_2</mat-icon>
+                    <span matLine>Night Mode <strong>{{isDarkTheme?'ON':'OFF'}}</strong></span>
+                </mat-list-item>
             </mat-nav-list>
 
         </mat-sidenav>
-        <mat-sidenav mode="side" class="sidenav-right" position="end" opened></mat-sidenav>
+        <mat-sidenav mode="side" class="sidenav-right" position="end" opened="false"></mat-sidenav>
         <mat-sidenav-content data-simplebar>
-          <router-outlet></router-outlet>
+            <section style="margin-bottom: 3rem;">
+                <router-outlet></router-outlet>
+            </section>
             <!-- <h1 class="mat-display-4" *ngFor="let i of [1,2,3,4,5,6,7,8,9]">poipoipoipoi</h1> -->
         </mat-sidenav-content>
     </mat-sidenav-container>

@@ -1,9 +1,11 @@
+@import '../../../../../variables.scss';
+
 .discover-home-container{
     
     .section-title{
         margin-bottom: 1rem;
     }
     mat-grid-tile{
-        background-color: aquamarine;
+        background-color: rgba(0,0,0, .12);
     }
 }
